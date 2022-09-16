@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adil Mufti</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="menu">
+        <button class="btn" onclick='window.location.href="#aboutMe"'>Home</button>
+        <button class="btn" onclick='window.location.href="#aboutMe"'>About me</button>
+        <button class="btn" onclick="window.location.href='#projectModals'">Projects</button>
+        <button class="btn" onclick='window.location.href="#hobbies"'>Hobbies </button>
+        <button class="btn" onclick='window.location.href="#connect"'>Connect</button>
+        <br>
+        <hr>
+    </div>
+
+    <div id="aboutMe" class="aboutMe snaps-inline">
+        <div class="label"><h1>about me</h1></div>
+        <div class="scollers">
+            <div id="first" class="scroll">
+                <h1>hi, i'm Adil. Welcome to my website!</h1>
+                <span>Swipe 👉</span>
+            </div>
+            <div id="second" class="scroll">
+                <p> I'm a BSc Computer Science student, currently in my second year at UCL. In my first year I attained First Class Honors, and was in the top 10% of the cohort. Prior to university I had very minimal coding knowledge. Since joining university, I was exposed to a host of different programming environments, styles and languages. Whilst also delving deeper into the theoretical side of computers.</p>
+            </div>
+            <div id="third" class="scroll">
+                <p>i am currently exploring new programming languages and learning an amplitude of new skills. i am eager to build my knowledge and delve deeper into new exciting technologies</p>
+            </div>
+        </div>
+        <!-- horizontal scroller. Little arrows on left and right -->
+    </div>
+
+
+
+    <div id="projectModals" class="projectModals">
+        <div class="label"><h1>projects</h1></div>
+        <div class="group1">
+
+            <div class="simplify modal">
+                <h3 class="modaltext">Simplify</h3>
+                <hr>
+                <p class="modaltext">A mathematical tool which solves and simplifies propositional logic expressions</p>
+                <div class="languages">
+                    <img src="./python.png">
+                    <span>Python</span>
+                </div>
+                <div class="modalbutton">
+                    <button data-modal-target="#modalpopup" class="modalshow">Learn More</button>
+                </div>
+            </div>
+            <div class="modalpopup" id="modalpopup">
+                <div class="modal-header">
+                    <div class="title">Simplify</div>
+                    <button data-close-button class="modal-close">&times</button>
+                </div>
+                <div class="modal-body">
+                    I programmed majority of the backend for this tool. <br><br>Firstly, I focused on transforming propositional logic statements into truth tables for the user to optionally view. <br>Secondly, fully simplifying expressions into conjunctive and disjunctive form. This would then be the answer to the question box which the user has to fill in. <br><br>The tool has two types of questions. Either, you could make a txt file with the questions and the tool would read from the file and display those questions to the user. Or the user could enter their own question and attempt it themselves.
+                </div>
+            </div>
+
+            <div class="Tetris modal">
+                <h3 class="modaltext">Tetris AI</h3>
+                <hr>
+                <p class="modaltext">A program that calculates the best possible move to play in a game of Tetris</p>
+                <div class="languages">
+                    <img src="./python.png">
+                    <span>Python</span>
+                </div>
+                <div class="modalbutton">
+                    <button data-modal-target="#modalpopup2" class="modalshow">Learn More</button>
+                </div>
+            </div>
+            <div class="modalpopup" id="modalpopup2">
+                <div class="modal-header">
+                    <div class="title">Tetris AI</div>
+                    <button data-close-button class="modal-close">&times</button>
+                </div>
+                <div class="modal-body">
+                    When calculating the best possible move, there are 40 possibilities. The programme has internal factors which weight the strength of each move. For example, how many holes would a move create? Or the aggregate height that adding a block would have?
+                    The programme would internally clone the game board, then try out all 40 possible move combinations. It will assess the strength of each move according to the internal weighting factors.
+                    I was manually tuning the importance of these factors, so some factors would be given priority over others.
+                </div>
+            </div>
+            
+            <div class="notes modal">
+                <h3 class="modaltext">Note App</h3>
+                <hr>
+                <p class="modaltext">A note taking web application to store notes</p>
+                <br>
+                <div class="languages">
+                    <img src="./java.png">
+                    <span>Java</span>
+                </div>
+                <div class="modalbutton">
+                    <button data-modal-target="#modalpopup3" class="modalshow">Learn More</button>
+                </div>
+            </div>
+            <div class="modalpopup" id="modalpopup3">
+                <div class="modal-header">
+                    <div class="title">Note App</div>
+                    <button data-close-button class="modal-close">&times</button>
+                </div>
+                <div class="modal-body">
+                    This is an extensive web app which gives the user options to make their own notes, save notes, edit notes and rename notes. All notes consist of a title and a body and can contain all characters. I store every note in a text file where each note is separated by special characters. These special characters allow the program to detect when a note finishes and when the next note starts!
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="group2">
+
+            <div class="tutorivse modal">
+                <h3 class="modaltext">Tutorvise Feedback Form</h3>
+                <hr>
+                <p class="modaltext">A functioning feedback form used by Tutorvise</p>
+                <div class="languages">
+                    <img src="./js.png">
+                    <span>JavaScript</span>
+                </div>
+                <br>
+                <div class="modalbutton">
+                    <button data-modal-target="#modalpopup4" class="modalshow">Learn More</button>
+                </div>
+            </div>
+            <div class="modalpopup" id="modalpopup4">
+                <div class="modal-header">
+                    <div class="title">Tutorvise Feedback Form</div>
+                    <button data-close-button class="modal-close">&times</button>
+                </div>
+                <div class="modal-body">
+                    This was my first attempt at putting my html, css and javascript knowledge to use. The form has varied input fields, some of which are reuqired and not required. The submit button will register when all required fields are full and will pop up a screen, which acknowledges the feedback is submitted. This popup also has a close button, which closes the page. This way feedback can only be submitted once per time the form is loaded.
+                </div>
+            </div>
+
+            <div class="react modal">
+                <h3 class="modaltext">React js</h3>
+                <hr>
+                <p class="modaltext">Work in progress</p>
+                <br>
+                <div class="languages">
+                    <img src="./python.png">
+                    <span>React</span>
+                </div>
+                <br>
+                <div class="modalbutton">
+                    <button data-modal-target="#modalpopup5" class="modalshow">Learn More</button>
+                </div>
+            </div>
+            <div class="modalpopup" id="modalpopup5">
+                <div class="modal-header">
+                    <div class="title">React JS</div>
+                    <button data-close-button class="modal-close">&times</button>
+                </div>
+                <div class="modal-body">
+                    Work in progress...
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div id="hobbies" class="hobbies">
+        <div class="label"><h1>hobbies</h1></div>
+        <div class="scollers">
+            <div id="firstdown" class="scrolldown">
+                <h2>My hobbies and interests</h2>
+                <br>
+                <span>📜 scroll 📜</span>
+            </div>
+            <div id="seconddown" class="scrolldown">
+                <h3>Chess</h3>
+                <br>
+                <p>Chess was one of the sports which i competed in from a young age. I represented my county (Berkshire) in national tournaments. As well is competing in many individual tournaments and winning a number of both team and individual accolades.</p>
+            </div>
+            <div id="thirddown" class="scrolldown">
+                <h3>Football</h3>
+                <br>
+                <p>Whilst playing chess, I always enjoyed playing football in my free-time. This is when I decided to join a club. During these years I grasped key teamwork attributes. For example, covering for my teammate, supporting them during the match, or even building relationships with them such that we become friends outside of football. These characteristic have become second-nature to me in day-to-day life. Although I left the club many years ago, I continue to casually play football very regularly since.</p>
+            </div>
+            <div id="fourthdown" class="scrolldown">
+                <h3>Cricket</h3>
+                <br>
+                <p>I also played lots of cricket in my free-time. After leaving my football club I joined Sonning Cricket Club. Here, I quickly became captain and worked my way to the county squad. Although this endevour did not last long it was a great experience. It led me to joining Wokingham Cricket Club, where I again became captain and enjoyed playing until my GCSE year. Now, despite not playing for a club I often practice with my brother.</p>
+            </div>
+            <div id="fifthdown" class="scrolldown">
+                <h3>Piano</h3>
+                <br>
+                <p>I started playing piano around the age of 12. In lessons I was focused on my grade qualifications. However, for the last few years I have started to enjoy listening and learning to different styles of piano. Currently, I enjoy listening to Yann Tiersen</p>
+            </div>
+            <div id="sixthdown" class="scrolldown">
+                <h3>Other Sports</h3>
+                <br>
+                <p>I never played many sports for a team or competitively. However, I still enjoyed and continue to enjoy regularly playing: Table Tennis, Tennis and Badminton. I find being able to play a whole raft of extra-curricular activities is a great ice-breaker when meeting new people, also a good way to spend time with friends.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="connect" class="connect">
+        <div class="label"><h1>connect</h1></div>
+        <!-- <form id="contact-form" action="assets/contact.php" method="post" data-toggle="validator"> -->
+            <form id="contact-form" data-toggle="validator">
+            <h1>Contact me via email</h1>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="single-form form-group">
+                        <input type="text" name="name" placeholder="Your Name" data-error="Name is required." required="required">
+                        <div class="help-block with-errors"></div>
+                    </div> <!-- single form -->
+                </div>
+                <div class="col-md-6">
+                    <div class="single-form form-group">
+                        <input type="email" name="email" placeholder="Your Email" data-error="Valid email is required." required="required">
+                        <div class="help-block with-errors"></div>
+                    </div> <!-- single form -->
+                </div>
+                <div class="col-md-6">
+                    <div class="single-form form-group">
+                        <input type="text" name="subject" placeholder="Subject" data-error="Subject is required." required="required">
+                        <div class="help-block with-errors"></div>
+                    </div> <!-- single form -->
+                </div>
+                <div class="col-md-12">
+                    <div class="single-form form-group">
+                        <textarea placeholder="Your Message" name="message" data-error="Please, leave us a message." required="required" rows="6"></textarea>
+                        <div class="help-block with-errors"></div>
+                    </div> <!-- single form -->
+                </div>
+                <!-- <p class="form-message"></p> -->
+                <div class="col-md-12">
+                    <div class="single-form form-group text-center">
+                        <button type="submit" class="main-btn btn-one">Send Message</button>
+                    </div> <!-- single form -->
+                </div>
+            </div> <!-- row -->
+        </form>
+        <br><br><br>
+        <p>Please do connect with me! I'd love to see and share cool things the both of us get up to 😜</p>
+        <p>(Also, if you have time, why not stop and check out my projects on Github👇)</p>
+        <!-- <br> -->
+        <a href="https://www.github.com" target="_blank"><img src="github.png"></a>
+        <a href="https://www.linkedin.com/in/adilmufti" target="_blank"><img src="linkedin.png"></a>
+        <!-- clickable icons to github and linkedin -->
+    </div>
+    <div id="overlay"></div>
+</body>
+</html>
